@@ -1,0 +1,10 @@
+EXT = .bin
+INCLUDE = $(addprefix -I , include)
+TEST = $(addsuffix $(EXT), $(addprefix $(BINDIR), test_SDL test_listes test_personnage test_liste_objet test_inventaire))
+GEN = $(BINDIR)jeux$(EXT) $(TEST)
+LDFLAGS = -L lib -lSDL2 -l m# Options d'édition de liens.
+ODIRCMD = obj/
+DIRMAKE = gen_dos.sh
+JSON-LIB-PATH = lib/libjson-c.a
+CUNIT-LIB-PATH = lib/libcunit.a
+rm = rm -f obj/*.o

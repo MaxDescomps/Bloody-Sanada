@@ -1,0 +1,151 @@
+\hypertarget{structs__map}{}\doxysection{Référence de la structure t\+\_\+map}
+\label{structs__map}\index{t\_map@{t\_map}}
+
+
+Structure représentant une map.  
+
+
+
+
+Graphe de collaboration de t\+\_\+map\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{d5/d6e/structs__map__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{structs__map_ada908676f9fb534c0e99ccf45808beb8}{id\+\_\+map}}
+\item 
+t\+\_\+aff $\ast$ \mbox{\hyperlink{structs__map_a8da9748668e62eeea8e210d3ba81df50}{text\+\_\+map}}
+\item 
+t\+\_\+aff $\ast$ \mbox{\hyperlink{structs__map_a889c64ca7ac5725b8ba0e93e7c3ee057}{text\+\_\+sol}}
+\item 
+t\+\_\+aff $\ast$ \mbox{\hyperlink{structs__map_a0cf21a0c0aaa32c99f1c0daff8f277bc}{texture\+\_\+superposition}}
+\item 
+unsigned int \mbox{\hyperlink{structs__map_a4bd0554ddfe12e87dfbb9405093cfecc}{width}}
+\item 
+unsigned int \mbox{\hyperlink{structs__map_af5a0e110f70dea1156fca46c53f1c6da}{height}}
+\item 
+unsigned int \mbox{\hyperlink{structs__map_af838fdad4e19edb485845ad1a76a38f3}{taille\+\_\+case}}
+\item 
+unsigned int \mbox{\hyperlink{structs__map_a09b2aabbbc6a94c633eb92658c8d286e}{cases\+\_\+x}}
+\item 
+unsigned int \mbox{\hyperlink{structs__map_af49bd6e471e7f802244cb14f180d886f}{cases\+\_\+y}}
+\item 
+\mbox{\hyperlink{structlist}{list}} $\ast$ \mbox{\hyperlink{structs__map_a865072c99e4600fdfaeabe30d7981d7b}{liste\+\_\+monstres}}
+\item 
+\mbox{\hyperlink{structlist}{list}} $\ast$ \mbox{\hyperlink{structs__map_a909aa57f45ea83c8c494488e315cd02f}{liste\+\_\+sorts}}
+\item 
+\mbox{\hyperlink{structlist}{list}} $\ast$ \mbox{\hyperlink{structs__map_abc1532265c403adfbc475bafca6ad747}{liste\+\_\+collisions}}
+\item 
+\mbox{\hyperlink{structlist}{list}} $\ast$ \mbox{\hyperlink{structs__map_af10961161860e31e9a4bc894a37de932}{liste\+\_\+coffres}}
+\item 
+\mbox{\hyperlink{structlist}{list}} $\ast$ \mbox{\hyperlink{structs__map_a8d1bfc8107f70a1d462ca92468896ab1}{liste\+\_\+zone\+\_\+tp}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Cette structure doit permettre de stocker toutes les informations liées à la map. ~\newline
+Pour cela, On va stocké sous forme de listes toutes les \mbox{\hyperlink{structs__map_abc1532265c403adfbc475bafca6ad747}{zones de collisions}}, \mbox{\hyperlink{structs__map_a909aa57f45ea83c8c494488e315cd02f}{les sorts}}, \mbox{\hyperlink{structs__map_a865072c99e4600fdfaeabe30d7981d7b}{les monstres}}, \mbox{\hyperlink{structs__map_af10961161860e31e9a4bc894a37de932}{les coffres}} et enfin \mbox{\hyperlink{structs__map_a8d1bfc8107f70a1d462ca92468896ab1}{les zones de tp}}. ~\newline
+ On retient également des informations importantes comme des textures \+: \mbox{\hyperlink{structs__map_a889c64ca7ac5725b8ba0e93e7c3ee057}{la texture de fond}}, \mbox{\hyperlink{structs__map_a0cf21a0c0aaa32c99f1c0daff8f277bc}{une texture à supperposer}} et enfin \mbox{\hyperlink{structs__map_a8da9748668e62eeea8e210d3ba81df50}{la map avec toutes les entitées}}. \begin{DoxyAuthor}{Auteurs}
+Ange Despert 
+
+Antoine Bruneau 
+
+Max Descomps 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{structs__map_a09b2aabbbc6a94c633eb92658c8d286e}\label{structs__map_a09b2aabbbc6a94c633eb92658c8d286e}} 
+\index{t\_map@{t\_map}!cases\_x@{cases\_x}}
+\index{cases\_x@{cases\_x}!t\_map@{t\_map}}
+\doxysubsubsection{\texorpdfstring{cases\_x}{cases\_x}}
+{\footnotesize\ttfamily unsigned int t\+\_\+map\+::cases\+\_\+x}
+
+Le nombre de cases affichées en x \mbox{\Hypertarget{structs__map_af49bd6e471e7f802244cb14f180d886f}\label{structs__map_af49bd6e471e7f802244cb14f180d886f}} 
+\index{t\_map@{t\_map}!cases\_y@{cases\_y}}
+\index{cases\_y@{cases\_y}!t\_map@{t\_map}}
+\doxysubsubsection{\texorpdfstring{cases\_y}{cases\_y}}
+{\footnotesize\ttfamily unsigned int t\+\_\+map\+::cases\+\_\+y}
+
+Le nombre de cases affichées en y \mbox{\Hypertarget{structs__map_af5a0e110f70dea1156fca46c53f1c6da}\label{structs__map_af5a0e110f70dea1156fca46c53f1c6da}} 
+\index{t\_map@{t\_map}!height@{height}}
+\index{height@{height}!t\_map@{t\_map}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily unsigned int t\+\_\+map\+::height}
+
+la hauteur de la map \mbox{\Hypertarget{structs__map_ada908676f9fb534c0e99ccf45808beb8}\label{structs__map_ada908676f9fb534c0e99ccf45808beb8}} 
+\index{t\_map@{t\_map}!id\_map@{id\_map}}
+\index{id\_map@{id\_map}!t\_map@{t\_map}}
+\doxysubsubsection{\texorpdfstring{id\_map}{id\_map}}
+{\footnotesize\ttfamily unsigned int t\+\_\+map\+::id\+\_\+map}
+
+L\textquotesingle{}identificateur de la map \mbox{\Hypertarget{structs__map_af10961161860e31e9a4bc894a37de932}\label{structs__map_af10961161860e31e9a4bc894a37de932}} 
+\index{t\_map@{t\_map}!liste\_coffres@{liste\_coffres}}
+\index{liste\_coffres@{liste\_coffres}!t\_map@{t\_map}}
+\doxysubsubsection{\texorpdfstring{liste\_coffres}{liste\_coffres}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlist}{list}}$\ast$ t\+\_\+map\+::liste\+\_\+coffres}
+
+La liste de tous les coffres \mbox{\Hypertarget{structs__map_abc1532265c403adfbc475bafca6ad747}\label{structs__map_abc1532265c403adfbc475bafca6ad747}} 
+\index{t\_map@{t\_map}!liste\_collisions@{liste\_collisions}}
+\index{liste\_collisions@{liste\_collisions}!t\_map@{t\_map}}
+\doxysubsubsection{\texorpdfstring{liste\_collisions}{liste\_collisions}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlist}{list}}$\ast$ t\+\_\+map\+::liste\+\_\+collisions}
+
+La liste de toutes les les collisions \mbox{\Hypertarget{structs__map_a865072c99e4600fdfaeabe30d7981d7b}\label{structs__map_a865072c99e4600fdfaeabe30d7981d7b}} 
+\index{t\_map@{t\_map}!liste\_monstres@{liste\_monstres}}
+\index{liste\_monstres@{liste\_monstres}!t\_map@{t\_map}}
+\doxysubsubsection{\texorpdfstring{liste\_monstres}{liste\_monstres}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlist}{list}}$\ast$ t\+\_\+map\+::liste\+\_\+monstres}
+
+La liste des monstres de la map \mbox{\Hypertarget{structs__map_a909aa57f45ea83c8c494488e315cd02f}\label{structs__map_a909aa57f45ea83c8c494488e315cd02f}} 
+\index{t\_map@{t\_map}!liste\_sorts@{liste\_sorts}}
+\index{liste\_sorts@{liste\_sorts}!t\_map@{t\_map}}
+\doxysubsubsection{\texorpdfstring{liste\_sorts}{liste\_sorts}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlist}{list}}$\ast$ t\+\_\+map\+::liste\+\_\+sorts}
+
+La liste des sorts de la map \mbox{\Hypertarget{structs__map_a8d1bfc8107f70a1d462ca92468896ab1}\label{structs__map_a8d1bfc8107f70a1d462ca92468896ab1}} 
+\index{t\_map@{t\_map}!liste\_zone\_tp@{liste\_zone\_tp}}
+\index{liste\_zone\_tp@{liste\_zone\_tp}!t\_map@{t\_map}}
+\doxysubsubsection{\texorpdfstring{liste\_zone\_tp}{liste\_zone\_tp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlist}{list}}$\ast$ t\+\_\+map\+::liste\+\_\+zone\+\_\+tp}
+
+La liste des points de téléportation \mbox{\Hypertarget{structs__map_af838fdad4e19edb485845ad1a76a38f3}\label{structs__map_af838fdad4e19edb485845ad1a76a38f3}} 
+\index{t\_map@{t\_map}!taille\_case@{taille\_case}}
+\index{taille\_case@{taille\_case}!t\_map@{t\_map}}
+\doxysubsubsection{\texorpdfstring{taille\_case}{taille\_case}}
+{\footnotesize\ttfamily unsigned int t\+\_\+map\+::taille\+\_\+case}
+
+La taille d\textquotesingle{}une case \mbox{\Hypertarget{structs__map_a8da9748668e62eeea8e210d3ba81df50}\label{structs__map_a8da9748668e62eeea8e210d3ba81df50}} 
+\index{t\_map@{t\_map}!text\_map@{text\_map}}
+\index{text\_map@{text\_map}!t\_map@{t\_map}}
+\doxysubsubsection{\texorpdfstring{text\_map}{text\_map}}
+{\footnotesize\ttfamily t\+\_\+aff$\ast$ t\+\_\+map\+::text\+\_\+map}
+
+La texture de la map \mbox{\Hypertarget{structs__map_a889c64ca7ac5725b8ba0e93e7c3ee057}\label{structs__map_a889c64ca7ac5725b8ba0e93e7c3ee057}} 
+\index{t\_map@{t\_map}!text\_sol@{text\_sol}}
+\index{text\_sol@{text\_sol}!t\_map@{t\_map}}
+\doxysubsubsection{\texorpdfstring{text\_sol}{text\_sol}}
+{\footnotesize\ttfamily t\+\_\+aff$\ast$ t\+\_\+map\+::text\+\_\+sol}
+
+La texture du sol \mbox{\Hypertarget{structs__map_a0cf21a0c0aaa32c99f1c0daff8f277bc}\label{structs__map_a0cf21a0c0aaa32c99f1c0daff8f277bc}} 
+\index{t\_map@{t\_map}!texture\_superposition@{texture\_superposition}}
+\index{texture\_superposition@{texture\_superposition}!t\_map@{t\_map}}
+\doxysubsubsection{\texorpdfstring{texture\_superposition}{texture\_superposition}}
+{\footnotesize\ttfamily t\+\_\+aff$\ast$ t\+\_\+map\+::texture\+\_\+superposition}
+
+La texture à supperposer devant le personnage \mbox{\Hypertarget{structs__map_a4bd0554ddfe12e87dfbb9405093cfecc}\label{structs__map_a4bd0554ddfe12e87dfbb9405093cfecc}} 
+\index{t\_map@{t\_map}!width@{width}}
+\index{width@{width}!t\_map@{t\_map}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily unsigned int t\+\_\+map\+::width}
+
+La longueur de la map 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{map_8h}{map.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,263 @@
+\hypertarget{map_8c}{}\doxysection{Référence du fichier map.\+c}
+\label{map_8c}\index{map.c@{map.c}}
+
+
+Fonctions de gestion de la map.  
+
+
+Graphe des dépendances par inclusion de map.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d4/d5f/map_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{map_8c_aad95fee9e6bf2bd4c8ae74d98e1a6821}{init\+\_\+sousbuffer}} (t\+\_\+map $\ast$\mbox{\hyperlink{map_8h_a4bacbbb5c2d9a6cbd19ca4cba0dac1ae}{map}}, joueur\+\_\+t $\ast$joueur)
+\begin{DoxyCompactList}\small\item\em Fonction qui initialise les textures qui serviront de buffer d\textquotesingle{}affichage au moteur du jeu. \end{DoxyCompactList}\item 
+S\+D\+L\+\_\+\+Rect \mbox{\hyperlink{map_8c_a7ea38c5f7f7daf29e01fbc3a4d560a0a}{taille\+\_\+ecran\+\_\+cases}} ()
+\item 
+t\+\_\+map $\ast$ \mbox{\hyperlink{map_8c_af6448083132a6591f73061457f30ebb3}{charger\+\_\+map}} (const char $\ast$const nom\+\_\+map)
+\begin{DoxyCompactList}\small\item\em Fonction qui récupère les informations stockées dans le fichier don le nom est donne en entrée. \end{DoxyCompactList}\item 
+t\+\_\+aff $\ast$ \mbox{\hyperlink{map_8c_abd78a434afc7dae4de6de6e0b879ccb8}{texture\+\_\+map}} (const t\+\_\+map $\ast$\mbox{\hyperlink{map_8h_a4bacbbb5c2d9a6cbd19ca4cba0dac1ae}{map}})
+\begin{DoxyCompactList}\small\item\em Fonction qui renvoie la texture de la map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{map_8c_af837acc6ac888e66589d3ff48f4eec12}{detruire\+\_\+map}} (t\+\_\+map $\ast$$\ast$\mbox{\hyperlink{map_8h_a4bacbbb5c2d9a6cbd19ca4cba0dac1ae}{map}}, joueur\+\_\+t $\ast$joueurs\mbox{[}$\,$\mbox{]}, unsigned short int nb\+\_\+joueurs)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet de détruire une map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{map_8c_a87fdc73350f70425b5529472974ecbbb}{transition}} (t\+\_\+map $\ast$$\ast$actuelle, unsigned int num\+\_\+map, joueur\+\_\+t $\ast$$\ast$joueurs, unsigned short int nb\+\_\+joueurs, unsigned int new\+\_\+x, unsigned int new\+\_\+y)
+\item 
+void \mbox{\hyperlink{map_8c_a7e9c15657f08efce7a84ec6822c064e2}{tp\+\_\+joueurs}} (t\+\_\+map $\ast$\mbox{\hyperlink{map_8h_a4bacbbb5c2d9a6cbd19ca4cba0dac1ae}{map}}, unsigned int x, unsigned int y, joueur\+\_\+t $\ast$$\ast$joueurs, unsigned short int nb\+\_\+joueurs)
+\item 
+void \mbox{\hyperlink{map_8c_afdbe963c5a898a0a22d8cee340aebfa2}{afficher\+\_\+zone\+\_\+tp}} (\mbox{\hyperlink{structzone__tp}{zone\+\_\+tp}} $\ast$z)
+\item 
+\mbox{\hyperlink{definition__commun_8h_abb452686968e48b67397da5f97445f5b}{bool}} \mbox{\hyperlink{map_8c_ae85d987f7ccc73e2535c44e5d58cb634}{hors\+\_\+map\+\_\+monstre}} (S\+D\+L\+\_\+\+Rect $\ast$collision, t\+\_\+map $\ast$\mbox{\hyperlink{map_8h_a4bacbbb5c2d9a6cbd19ca4cba0dac1ae}{map}})
+\begin{DoxyCompactList}\small\item\em Fonction qui regarde si l\textquotesingle{}entité est hors\+\_\+map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+t\+\_\+map $\ast$ \mbox{\hyperlink{map_8c_a4bacbbb5c2d9a6cbd19ca4cba0dac1ae}{map}} = N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Ange Despert (\href{mailto:Ange.Despert.Etu@univ-lemans.fr}{\texttt{ Ange.\+Despert.\+Etu@univ-\/lemans.\+fr}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+28/03/2022 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{map_8c_afdbe963c5a898a0a22d8cee340aebfa2}\label{map_8c_afdbe963c5a898a0a22d8cee340aebfa2}} 
+\index{map.c@{map.c}!afficher\_zone\_tp@{afficher\_zone\_tp}}
+\index{afficher\_zone\_tp@{afficher\_zone\_tp}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{afficher\_zone\_tp()}{afficher\_zone\_tp()}}
+{\footnotesize\ttfamily void afficher\+\_\+zone\+\_\+tp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structzone__tp}{zone\+\_\+tp}} $\ast$}]{z }\end{DoxyParamCaption})}
+
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{d3/d7a/map_8c_afdbe963c5a898a0a22d8cee340aebfa2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{map_8c_af6448083132a6591f73061457f30ebb3}\label{map_8c_af6448083132a6591f73061457f30ebb3}} 
+\index{map.c@{map.c}!charger\_map@{charger\_map}}
+\index{charger\_map@{charger\_map}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{charger\_map()}{charger\_map()}}
+{\footnotesize\ttfamily t\+\_\+map$\ast$ charger\+\_\+map (\begin{DoxyParamCaption}\item[{const char $\ast$const}]{nom\+\_\+map }\end{DoxyParamCaption})}
+
+\begin{DoxyAuthor}{Auteur}
+Ange Despert
+\end{DoxyAuthor}
+Fonction qui fait appel à la librairie J\+S\+O\+N-\/C pour charger les informations de la map au format J\+S\+ON. 
+\begin{DoxyParams}{Paramètres}
+{\em nom\+\_\+map} & Le nom du fichier qui contient les informations sur la map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Une map initialisée avec toutes les informations dedans 
+\end{DoxyReturn}
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d7a/map_8c_af6448083132a6591f73061457f30ebb3_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{d3/d7a/map_8c_af6448083132a6591f73061457f30ebb3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{map_8c_af837acc6ac888e66589d3ff48f4eec12}\label{map_8c_af837acc6ac888e66589d3ff48f4eec12}} 
+\index{map.c@{map.c}!detruire\_map@{detruire\_map}}
+\index{detruire\_map@{detruire\_map}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{detruire\_map()}{detruire\_map()}}
+{\footnotesize\ttfamily void detruire\+\_\+map (\begin{DoxyParamCaption}\item[{t\+\_\+map $\ast$$\ast$}]{map,  }\item[{joueur\+\_\+t $\ast$}]{joueurs\mbox{[}$\,$\mbox{]},  }\item[{unsigned short int}]{nb\+\_\+joueurs }\end{DoxyParamCaption})}
+
+\begin{DoxyAuthor}{Auteur}
+Ange Despert
+\end{DoxyAuthor}
+Cette fonction libèrera toute la mémoire allouée a la map. Elle détruira égalament les éléments des listes de la map. ~\newline
+En ce qui concerne la liste de collision, étant donné que certains rectangle ne sont pas dynamiques, la fonction va d\textquotesingle{}abord s\textquotesingle{}assurer qu\textquotesingle{}ils peuvent être supprimer.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em map} & L\textquotesingle{}addresse de la map que l\textquotesingle{}on veut détruire \\
+\hline
+{\em joueurs} & Les joueurs qui existent \\
+\hline
+{\em nb\+\_\+joueurs} & Le nombre de joueurs qui existent \\
+\hline
+\end{DoxyParams}
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d7a/map_8c_af837acc6ac888e66589d3ff48f4eec12_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{d3/d7a/map_8c_af837acc6ac888e66589d3ff48f4eec12_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{map_8c_ae85d987f7ccc73e2535c44e5d58cb634}\label{map_8c_ae85d987f7ccc73e2535c44e5d58cb634}} 
+\index{map.c@{map.c}!hors\_map\_monstre@{hors\_map\_monstre}}
+\index{hors\_map\_monstre@{hors\_map\_monstre}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{hors\_map\_monstre()}{hors\_map\_monstre()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{definition__commun_8h_abb452686968e48b67397da5f97445f5b}{bool}} hors\+\_\+map\+\_\+monstre (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Rect $\ast$}]{collision,  }\item[{t\+\_\+map $\ast$}]{map }\end{DoxyParamCaption})}
+
+\begin{DoxyAuthor}{Auteur}
+Bruneau Antoine 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Paramètres}
+{\em collision} & la collision de l\textquotesingle{}entité \\
+\hline
+{\em map} & la map \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+bool 1 si l\textquotesingle{}entité est en dehors de la map, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_aad95fee9e6bf2bd4c8ae74d98e1a6821}\label{map_8c_aad95fee9e6bf2bd4c8ae74d98e1a6821}} 
+\index{map.c@{map.c}!init\_sousbuffer@{init\_sousbuffer}}
+\index{init\_sousbuffer@{init\_sousbuffer}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{init\_sousbuffer()}{init\_sousbuffer()}}
+{\footnotesize\ttfamily void init\+\_\+sousbuffer (\begin{DoxyParamCaption}\item[{t\+\_\+map $\ast$}]{map,  }\item[{joueur\+\_\+t $\ast$}]{joueur }\end{DoxyParamCaption})}
+
+\begin{DoxyAuthor}{Auteur}
+Ange Despert
+\end{DoxyAuthor}
+On va initialiser 2 sous buffer \+: l\textquotesingle{}un pour le \mbox{\hyperlink{structs__map_a8da9748668e62eeea8e210d3ba81df50}{plan principal}} et l\textquotesingle{}un pour le \mbox{\hyperlink{affichage_8h_aef49d39125567f1a9d5ed0561ea60edc}{1er plan}}.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em map} & La mat qui contiendra l\textquotesingle{}un des sous buffer \\
+\hline
+{\em joueur} & Joueur autour duquel se fait la fenêtre d\textquotesingle{}affichage de la carte \\
+\hline
+\end{DoxyParams}
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{d3/d7a/map_8c_aad95fee9e6bf2bd4c8ae74d98e1a6821_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{d3/d7a/map_8c_aad95fee9e6bf2bd4c8ae74d98e1a6821_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{map_8c_a7ea38c5f7f7daf29e01fbc3a4d560a0a}\label{map_8c_a7ea38c5f7f7daf29e01fbc3a4d560a0a}} 
+\index{map.c@{map.c}!taille\_ecran\_cases@{taille\_ecran\_cases}}
+\index{taille\_ecran\_cases@{taille\_ecran\_cases}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{taille\_ecran\_cases()}{taille\_ecran\_cases()}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Rect taille\+\_\+ecran\+\_\+cases (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{map_8c_abd78a434afc7dae4de6de6e0b879ccb8}\label{map_8c_abd78a434afc7dae4de6de6e0b879ccb8}} 
+\index{map.c@{map.c}!texture\_map@{texture\_map}}
+\index{texture\_map@{texture\_map}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{texture\_map()}{texture\_map()}}
+{\footnotesize\ttfamily t\+\_\+aff$\ast$ texture\+\_\+map (\begin{DoxyParamCaption}\item[{const t\+\_\+map $\ast$}]{map }\end{DoxyParamCaption})}
+
+\begin{DoxyAuthor}{Auteur}
+Ange Despert
+\end{DoxyAuthor}
+On va directement chercher cette information dans la structure \mbox{\hyperlink{structs__map}{de la map}}.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em map} & La map dont on veut la texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+La texture de la map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{map_8c_a7e9c15657f08efce7a84ec6822c064e2}\label{map_8c_a7e9c15657f08efce7a84ec6822c064e2}} 
+\index{map.c@{map.c}!tp\_joueurs@{tp\_joueurs}}
+\index{tp\_joueurs@{tp\_joueurs}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{tp\_joueurs()}{tp\_joueurs()}}
+{\footnotesize\ttfamily void tp\+\_\+joueurs (\begin{DoxyParamCaption}\item[{t\+\_\+map $\ast$}]{map,  }\item[{unsigned int}]{x,  }\item[{unsigned int}]{y,  }\item[{joueur\+\_\+t $\ast$$\ast$}]{joueurs,  }\item[{unsigned short int}]{nb\+\_\+joueurs }\end{DoxyParamCaption})}
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d7a/map_8c_a7e9c15657f08efce7a84ec6822c064e2_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{d3/d7a/map_8c_a7e9c15657f08efce7a84ec6822c064e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{map_8c_a87fdc73350f70425b5529472974ecbbb}\label{map_8c_a87fdc73350f70425b5529472974ecbbb}} 
+\index{map.c@{map.c}!transition@{transition}}
+\index{transition@{transition}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{transition()}{transition()}}
+{\footnotesize\ttfamily void transition (\begin{DoxyParamCaption}\item[{t\+\_\+map $\ast$$\ast$}]{actuelle,  }\item[{unsigned int}]{num\+\_\+map,  }\item[{joueur\+\_\+t $\ast$$\ast$}]{joueurs,  }\item[{unsigned short int}]{nb\+\_\+joueurs,  }\item[{unsigned int}]{new\+\_\+x,  }\item[{unsigned int}]{new\+\_\+y }\end{DoxyParamCaption})}
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d7a/map_8c_a87fdc73350f70425b5529472974ecbbb_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{d3/d7a/map_8c_a87fdc73350f70425b5529472974ecbbb_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{map_8c_a4bacbbb5c2d9a6cbd19ca4cba0dac1ae}\label{map_8c_a4bacbbb5c2d9a6cbd19ca4cba0dac1ae}} 
+\index{map.c@{map.c}!map@{map}}
+\index{map@{map}!map.c@{map.c}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily t\+\_\+map$\ast$ map = N\+U\+LL}
+
+La map courante 

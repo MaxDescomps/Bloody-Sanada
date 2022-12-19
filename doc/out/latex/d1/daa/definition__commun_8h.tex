@@ -1,0 +1,259 @@
+\hypertarget{definition__commun_8h}{}\doxysection{Référence du fichier definition\+\_\+commun.\+h}
+\label{definition__commun_8h}\index{definition\_commun.h@{definition\_commun.h}}
+
+
+Contient toutes les définitions communes à tout les fichiers.  
+
+
+Graphe des dépendances par inclusion de definition\+\_\+commun.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{db/d70/definition__commun_8h__incl}
+\end{center}
+\end{figure}
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d5/d80/definition__commun_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structpoint}{point}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{definition__commun_8h_abb452686968e48b67397da5f97445f5b}{bool}}~\+\_\+\+Bool
+\item 
+\#define \mbox{\hyperlink{definition__commun_8h_aa4113a26497a6784f9b855b197609b55}{vrai}}~1
+\item 
+\#define \mbox{\hyperlink{definition__commun_8h_a02b37ade0ca9321842b5ed7445f1a9cd}{faux}}~0
+\item 
+\#define \mbox{\hyperlink{definition__commun_8h_a9ae1cdc758f8a73904949e4195e0796d}{S\+A\+V\+E\+\_\+\+P\+A\+TH}}~\char`\"{}Bloody\+\_\+\+Sanada\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef unsigned char \mbox{\hyperlink{definition__commun_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{definition__commun_8h_a13e1e2bc88dbbeed269e17c3f1ba831f}{t\+\_\+direction\+\_\+1}} \{ \mbox{\hyperlink{definition__commun_8h_a13e1e2bc88dbbeed269e17c3f1ba831facc4ba0e66edb6df8f19ed8062f2cb7b3}{N\+O\+R\+D\+\_\+1}}, 
+\mbox{\hyperlink{definition__commun_8h_a13e1e2bc88dbbeed269e17c3f1ba831fa3ee015073070ed1827854720723bac3b}{E\+S\+T\+\_\+1}}, 
+\mbox{\hyperlink{definition__commun_8h_a13e1e2bc88dbbeed269e17c3f1ba831fa028f87843d3248db9ff5d43d66e5edfc}{S\+U\+D\+\_\+1}}, 
+\mbox{\hyperlink{definition__commun_8h_a13e1e2bc88dbbeed269e17c3f1ba831fa0456768f1740505fd6cc73db87ed7718}{O\+U\+E\+S\+T\+\_\+1}}
+ \}
+\begin{DoxyCompactList}\small\item\em Structure de quatre points cardinaux. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1}{t\+\_\+direction\+\_\+2}} \{ \newline
+\mbox{\hyperlink{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1aff10397b6d805ace9af2a15528048cab}{N\+O\+R\+D\+\_\+2}}, 
+\mbox{\hyperlink{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1ad735d9cd1992922ff7d1c857acbd0900}{N\+O\+R\+D\+\_\+\+E\+S\+T\+\_\+2}}, 
+\mbox{\hyperlink{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1a2fd4728aadbb8132642319c00939bffd}{E\+S\+T\+\_\+2}}, 
+\mbox{\hyperlink{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1a14d73753f3fb9e1f1d0b65d80bedea58}{S\+U\+D\+\_\+\+E\+S\+T\+\_\+2}}, 
+\newline
+\mbox{\hyperlink{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1a57fcf499935b6cf2db51a3cbdd44ec00}{S\+U\+D\+\_\+2}}, 
+\mbox{\hyperlink{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1a6a8a81edd70d4dea2ddb790b0cde912c}{S\+U\+D\+\_\+\+O\+U\+E\+S\+T\+\_\+2}}, 
+\mbox{\hyperlink{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1a556a2d7445384aec0b7e034fa4438f5b}{O\+U\+E\+S\+T\+\_\+2}}, 
+\mbox{\hyperlink{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1abae1e11c9cc6f25870166980579304d0}{N\+O\+R\+D\+\_\+\+O\+U\+E\+S\+T\+\_\+2}}
+ \}
+\begin{DoxyCompactList}\small\item\em Structure de huit points cardinaux. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{definition__commun_8h_affaacddc6fe16ed3d818bf7e0c9798eb}{fermer\+\_\+programme}} (int code\+\_\+erreur)
+\begin{DoxyCompactList}\small\item\em Fonction qui appelle les fonctions pour terminer le programme. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{definition__commun_8h_a28b763408ce1b0c5b625e4c409a5022a}{F\+E\+N\+E\+T\+R\+E\+\_\+\+L\+O\+N\+G\+U\+E\+UR}}
+\item 
+unsigned int \mbox{\hyperlink{definition__commun_8h_a675ea76148cd2210ee956b7358f18194}{F\+E\+N\+E\+T\+R\+E\+\_\+\+L\+A\+R\+G\+E\+UR}}
+\item 
+S\+D\+L\+\_\+\+Window $\ast$ \mbox{\hyperlink{definition__commun_8h_a760de443d1a045170cadd7adfef6653c}{fenetre\+\_\+\+Principale}}
+\item 
+S\+D\+L\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{definition__commun_8h_a7ad8058d8319a935f7a37f72d4e3e81a}{rendu\+\_\+principal}}
+\item 
+\+\_\+\+Bool \mbox{\hyperlink{definition__commun_8h_a1796ee88ed9ad0c783dd29a444f95719}{running}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\begin{DoxyAuthor}{Auteur}
+Ange Despert (\href{mailto:Ange.Despert.Etu@univ-lemans.fr}{\texttt{ Ange.\+Despert.\+Etu@univ-\/lemans.\+fr}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+05/04/22 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Documentation des macros}
+\mbox{\Hypertarget{definition__commun_8h_abb452686968e48b67397da5f97445f5b}\label{definition__commun_8h_abb452686968e48b67397da5f97445f5b}} 
+\index{definition\_commun.h@{definition\_commun.h}!bool@{bool}}
+\index{bool@{bool}!definition\_commun.h@{definition\_commun.h}}
+\doxysubsubsection{\texorpdfstring{bool}{bool}}
+{\footnotesize\ttfamily \#define bool~\+\_\+\+Bool}
+
+Définition du type booléen \mbox{\Hypertarget{definition__commun_8h_a02b37ade0ca9321842b5ed7445f1a9cd}\label{definition__commun_8h_a02b37ade0ca9321842b5ed7445f1a9cd}} 
+\index{definition\_commun.h@{definition\_commun.h}!faux@{faux}}
+\index{faux@{faux}!definition\_commun.h@{definition\_commun.h}}
+\doxysubsubsection{\texorpdfstring{faux}{faux}}
+{\footnotesize\ttfamily \#define faux~0}
+
+Valeur faux \mbox{\Hypertarget{definition__commun_8h_a9ae1cdc758f8a73904949e4195e0796d}\label{definition__commun_8h_a9ae1cdc758f8a73904949e4195e0796d}} 
+\index{definition\_commun.h@{definition\_commun.h}!SAVE\_PATH@{SAVE\_PATH}}
+\index{SAVE\_PATH@{SAVE\_PATH}!definition\_commun.h@{definition\_commun.h}}
+\doxysubsubsection{\texorpdfstring{SAVE\_PATH}{SAVE\_PATH}}
+{\footnotesize\ttfamily \#define S\+A\+V\+E\+\_\+\+P\+A\+TH~\char`\"{}Bloody\+\_\+\+Sanada\char`\"{}}
+
+L\textquotesingle{}emplacement de la sauvegarde \mbox{\Hypertarget{definition__commun_8h_aa4113a26497a6784f9b855b197609b55}\label{definition__commun_8h_aa4113a26497a6784f9b855b197609b55}} 
+\index{definition\_commun.h@{definition\_commun.h}!vrai@{vrai}}
+\index{vrai@{vrai}!definition\_commun.h@{definition\_commun.h}}
+\doxysubsubsection{\texorpdfstring{vrai}{vrai}}
+{\footnotesize\ttfamily \#define vrai~1}
+
+Valeur vrai 
+
+\doxysubsection{Documentation des définitions de type}
+\mbox{\Hypertarget{definition__commun_8h_a0c8186d9b9b7880309c27230bbb5e69d}\label{definition__commun_8h_a0c8186d9b9b7880309c27230bbb5e69d}} 
+\index{definition\_commun.h@{definition\_commun.h}!byte@{byte}}
+\index{byte@{byte}!definition\_commun.h@{definition\_commun.h}}
+\doxysubsubsection{\texorpdfstring{byte}{byte}}
+{\footnotesize\ttfamily typedef unsigned char \mbox{\hyperlink{definition__commun_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte}}}
+
+Type servant pour des triggers faisant la taille d\textquotesingle{}un octet 
+
+\doxysubsection{Documentation du type de l\textquotesingle{}énumération}
+\mbox{\Hypertarget{definition__commun_8h_a13e1e2bc88dbbeed269e17c3f1ba831f}\label{definition__commun_8h_a13e1e2bc88dbbeed269e17c3f1ba831f}} 
+\index{definition\_commun.h@{definition\_commun.h}!t\_direction\_1@{t\_direction\_1}}
+\index{t\_direction\_1@{t\_direction\_1}!definition\_commun.h@{definition\_commun.h}}
+\doxysubsubsection{\texorpdfstring{t\_direction\_1}{t\_direction\_1}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{definition__commun_8h_a13e1e2bc88dbbeed269e17c3f1ba831f}{t\+\_\+direction\+\_\+1}}}
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NORD\_1@{NORD\_1}!definition\_commun.h@{definition\_commun.h}}\index{definition\_commun.h@{definition\_commun.h}!NORD\_1@{NORD\_1}}}\mbox{\Hypertarget{definition__commun_8h_a13e1e2bc88dbbeed269e17c3f1ba831facc4ba0e66edb6df8f19ed8062f2cb7b3}\label{definition__commun_8h_a13e1e2bc88dbbeed269e17c3f1ba831facc4ba0e66edb6df8f19ed8062f2cb7b3}} 
+N\+O\+R\+D\+\_\+1&Point cardinal nord \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EST\_1@{EST\_1}!definition\_commun.h@{definition\_commun.h}}\index{definition\_commun.h@{definition\_commun.h}!EST\_1@{EST\_1}}}\mbox{\Hypertarget{definition__commun_8h_a13e1e2bc88dbbeed269e17c3f1ba831fa3ee015073070ed1827854720723bac3b}\label{definition__commun_8h_a13e1e2bc88dbbeed269e17c3f1ba831fa3ee015073070ed1827854720723bac3b}} 
+E\+S\+T\+\_\+1&Point cardinal est \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SUD\_1@{SUD\_1}!definition\_commun.h@{definition\_commun.h}}\index{definition\_commun.h@{definition\_commun.h}!SUD\_1@{SUD\_1}}}\mbox{\Hypertarget{definition__commun_8h_a13e1e2bc88dbbeed269e17c3f1ba831fa028f87843d3248db9ff5d43d66e5edfc}\label{definition__commun_8h_a13e1e2bc88dbbeed269e17c3f1ba831fa028f87843d3248db9ff5d43d66e5edfc}} 
+S\+U\+D\+\_\+1&Point cardinal sud \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OUEST\_1@{OUEST\_1}!definition\_commun.h@{definition\_commun.h}}\index{definition\_commun.h@{definition\_commun.h}!OUEST\_1@{OUEST\_1}}}\mbox{\Hypertarget{definition__commun_8h_a13e1e2bc88dbbeed269e17c3f1ba831fa0456768f1740505fd6cc73db87ed7718}\label{definition__commun_8h_a13e1e2bc88dbbeed269e17c3f1ba831fa0456768f1740505fd6cc73db87ed7718}} 
+O\+U\+E\+S\+T\+\_\+1&Point cardinal ouest \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1}\label{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1}} 
+\index{definition\_commun.h@{definition\_commun.h}!t\_direction\_2@{t\_direction\_2}}
+\index{t\_direction\_2@{t\_direction\_2}!definition\_commun.h@{definition\_commun.h}}
+\doxysubsubsection{\texorpdfstring{t\_direction\_2}{t\_direction\_2}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1}{t\+\_\+direction\+\_\+2}}}
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NORD\_2@{NORD\_2}!definition\_commun.h@{definition\_commun.h}}\index{definition\_commun.h@{definition\_commun.h}!NORD\_2@{NORD\_2}}}\mbox{\Hypertarget{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1aff10397b6d805ace9af2a15528048cab}\label{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1aff10397b6d805ace9af2a15528048cab}} 
+N\+O\+R\+D\+\_\+2&Point cardinal nord \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NORD\_EST\_2@{NORD\_EST\_2}!definition\_commun.h@{definition\_commun.h}}\index{definition\_commun.h@{definition\_commun.h}!NORD\_EST\_2@{NORD\_EST\_2}}}\mbox{\Hypertarget{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1ad735d9cd1992922ff7d1c857acbd0900}\label{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1ad735d9cd1992922ff7d1c857acbd0900}} 
+N\+O\+R\+D\+\_\+\+E\+S\+T\+\_\+2&Point cardinal nord-\/est \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EST\_2@{EST\_2}!definition\_commun.h@{definition\_commun.h}}\index{definition\_commun.h@{definition\_commun.h}!EST\_2@{EST\_2}}}\mbox{\Hypertarget{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1a2fd4728aadbb8132642319c00939bffd}\label{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1a2fd4728aadbb8132642319c00939bffd}} 
+E\+S\+T\+\_\+2&Point cardinal est \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SUD\_EST\_2@{SUD\_EST\_2}!definition\_commun.h@{definition\_commun.h}}\index{definition\_commun.h@{definition\_commun.h}!SUD\_EST\_2@{SUD\_EST\_2}}}\mbox{\Hypertarget{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1a14d73753f3fb9e1f1d0b65d80bedea58}\label{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1a14d73753f3fb9e1f1d0b65d80bedea58}} 
+S\+U\+D\+\_\+\+E\+S\+T\+\_\+2&Point cardinal sud-\/est \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SUD\_2@{SUD\_2}!definition\_commun.h@{definition\_commun.h}}\index{definition\_commun.h@{definition\_commun.h}!SUD\_2@{SUD\_2}}}\mbox{\Hypertarget{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1a57fcf499935b6cf2db51a3cbdd44ec00}\label{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1a57fcf499935b6cf2db51a3cbdd44ec00}} 
+S\+U\+D\+\_\+2&Point cardinal sud \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SUD\_OUEST\_2@{SUD\_OUEST\_2}!definition\_commun.h@{definition\_commun.h}}\index{definition\_commun.h@{definition\_commun.h}!SUD\_OUEST\_2@{SUD\_OUEST\_2}}}\mbox{\Hypertarget{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1a6a8a81edd70d4dea2ddb790b0cde912c}\label{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1a6a8a81edd70d4dea2ddb790b0cde912c}} 
+S\+U\+D\+\_\+\+O\+U\+E\+S\+T\+\_\+2&Point cardinal sud-\/ouest \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OUEST\_2@{OUEST\_2}!definition\_commun.h@{definition\_commun.h}}\index{definition\_commun.h@{definition\_commun.h}!OUEST\_2@{OUEST\_2}}}\mbox{\Hypertarget{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1a556a2d7445384aec0b7e034fa4438f5b}\label{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1a556a2d7445384aec0b7e034fa4438f5b}} 
+O\+U\+E\+S\+T\+\_\+2&Point cardinal ouest \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NORD\_OUEST\_2@{NORD\_OUEST\_2}!definition\_commun.h@{definition\_commun.h}}\index{definition\_commun.h@{definition\_commun.h}!NORD\_OUEST\_2@{NORD\_OUEST\_2}}}\mbox{\Hypertarget{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1abae1e11c9cc6f25870166980579304d0}\label{definition__commun_8h_a7f49efdfdf08d70d9980031175207fc1abae1e11c9cc6f25870166980579304d0}} 
+N\+O\+R\+D\+\_\+\+O\+U\+E\+S\+T\+\_\+2&Point cardinal nord-\/ouest \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{definition__commun_8h_affaacddc6fe16ed3d818bf7e0c9798eb}\label{definition__commun_8h_affaacddc6fe16ed3d818bf7e0c9798eb}} 
+\index{definition\_commun.h@{definition\_commun.h}!fermer\_programme@{fermer\_programme}}
+\index{fermer\_programme@{fermer\_programme}!definition\_commun.h@{definition\_commun.h}}
+\doxysubsubsection{\texorpdfstring{fermer\_programme()}{fermer\_programme()}}
+{\footnotesize\ttfamily void fermer\+\_\+programme (\begin{DoxyParamCaption}\item[{int}]{code\+\_\+erreur }\end{DoxyParamCaption})}
+
+\begin{DoxyAuthor}{Auteur}
+Ange Despert 
+\end{DoxyAuthor}
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/daa/definition__commun_8h_affaacddc6fe16ed3d818bf7e0c9798eb_cgraph}
+\end{center}
+\end{figure}
+Voici le graphe des appelants de cette fonction \+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/daa/definition__commun_8h_affaacddc6fe16ed3d818bf7e0c9798eb_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentation des variables}
+\mbox{\Hypertarget{definition__commun_8h_a675ea76148cd2210ee956b7358f18194}\label{definition__commun_8h_a675ea76148cd2210ee956b7358f18194}} 
+\index{definition\_commun.h@{definition\_commun.h}!FENETRE\_LARGEUR@{FENETRE\_LARGEUR}}
+\index{FENETRE\_LARGEUR@{FENETRE\_LARGEUR}!definition\_commun.h@{definition\_commun.h}}
+\doxysubsubsection{\texorpdfstring{FENETRE\_LARGEUR}{FENETRE\_LARGEUR}}
+{\footnotesize\ttfamily unsigned int F\+E\+N\+E\+T\+R\+E\+\_\+\+L\+A\+R\+G\+E\+UR}
+
+La largeur de la fenêtre obtenue par requête S\+DL \mbox{\Hypertarget{definition__commun_8h_a28b763408ce1b0c5b625e4c409a5022a}\label{definition__commun_8h_a28b763408ce1b0c5b625e4c409a5022a}} 
+\index{definition\_commun.h@{definition\_commun.h}!FENETRE\_LONGUEUR@{FENETRE\_LONGUEUR}}
+\index{FENETRE\_LONGUEUR@{FENETRE\_LONGUEUR}!definition\_commun.h@{definition\_commun.h}}
+\doxysubsubsection{\texorpdfstring{FENETRE\_LONGUEUR}{FENETRE\_LONGUEUR}}
+{\footnotesize\ttfamily unsigned int F\+E\+N\+E\+T\+R\+E\+\_\+\+L\+O\+N\+G\+U\+E\+UR}
+
+La longueur de la fenêtre obtenue par requête S\+DL \mbox{\Hypertarget{definition__commun_8h_a760de443d1a045170cadd7adfef6653c}\label{definition__commun_8h_a760de443d1a045170cadd7adfef6653c}} 
+\index{definition\_commun.h@{definition\_commun.h}!fenetre\_Principale@{fenetre\_Principale}}
+\index{fenetre\_Principale@{fenetre\_Principale}!definition\_commun.h@{definition\_commun.h}}
+\doxysubsubsection{\texorpdfstring{fenetre\_Principale}{fenetre\_Principale}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Window$\ast$ fenetre\+\_\+\+Principale}
+
+Pointeur sur la fenêtre principale du programme \mbox{\Hypertarget{definition__commun_8h_a7ad8058d8319a935f7a37f72d4e3e81a}\label{definition__commun_8h_a7ad8058d8319a935f7a37f72d4e3e81a}} 
+\index{definition\_commun.h@{definition\_commun.h}!rendu\_principal@{rendu\_principal}}
+\index{rendu\_principal@{rendu\_principal}!definition\_commun.h@{definition\_commun.h}}
+\doxysubsubsection{\texorpdfstring{rendu\_principal}{rendu\_principal}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Renderer$\ast$ rendu\+\_\+principal}
+
+Le rendu principal du programme \mbox{\Hypertarget{definition__commun_8h_a1796ee88ed9ad0c783dd29a444f95719}\label{definition__commun_8h_a1796ee88ed9ad0c783dd29a444f95719}} 
+\index{definition\_commun.h@{definition\_commun.h}!running@{running}}
+\index{running@{running}!definition\_commun.h@{definition\_commun.h}}
+\doxysubsubsection{\texorpdfstring{running}{running}}
+{\footnotesize\ttfamily \+\_\+\+Bool running}
+
+$<$Définition du type booléen Booléen qui permet de savoir si le programme doit s\textquotesingle{}arrêter 

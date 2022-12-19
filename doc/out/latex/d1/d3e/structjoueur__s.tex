@@ -1,0 +1,148 @@
+\hypertarget{structjoueur__s}{}\doxysection{Référence de la structure joueur\+\_\+t}
+\label{structjoueur__s}\index{joueur\_t@{joueur\_t}}
+
+
+Structure non manipulable hors des fonctions du personnage contenant les informations sur le joueur.  
+
+
+\doxysubsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ \mbox{\hyperlink{structjoueur__s_af3dfbec80c287ad8af431c0d075f2a78}{nom\+\_\+pers}}
+\item 
+short int \mbox{\hyperlink{structjoueur__s_a0f7112457a852b4db2c4ace8dc317159}{niveau}}
+\item 
+int \mbox{\hyperlink{structjoueur__s_a982ff904b277f68f58f85165c372c3a4}{xp}}
+\item 
+\mbox{\hyperlink{definition__commun_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte}} $\ast$ \mbox{\hyperlink{structjoueur__s_a17da423da1417ecd9d986e3a3ae5aa9f}{trigger}}
+\item 
+int \mbox{\hyperlink{structjoueur__s_a25ede0d11afd576d908541172b5de89f}{max\+Pdv}}
+\item 
+int \mbox{\hyperlink{structjoueur__s_af8bae63c7135414cd67e14e2720c8828}{pdv}}
+\item 
+int \mbox{\hyperlink{structjoueur__s_a50e33fa65206ee072f527b51edd64ba2}{attaque}}
+\item 
+int \mbox{\hyperlink{structjoueur__s_a7425e58690c8ec4ce5c3ee9a2f82e7a4}{defense}}
+\item 
+int \mbox{\hyperlink{structjoueur__s_a5424e8f0b5f17655064251c71fa4c5cf}{vitesse}}
+\item 
+int \mbox{\hyperlink{structjoueur__s_a3a76dc4048c45c64b6ba54747f705102}{attaque\+\_\+actif}}
+\item 
+int \mbox{\hyperlink{structjoueur__s_a9ad3c8ba8c284034f3ac32ee8e51fbce}{defense\+\_\+actif}}
+\item 
+int \mbox{\hyperlink{structjoueur__s_a751c17526ebc15d436fe0d7cb08b6a14}{vitesse\+\_\+actif}}
+\item 
+statut\+\_\+t $\ast$ \mbox{\hyperlink{structjoueur__s_a596a0e8a7494ccf4d737412e63ed85f4}{statut}}
+\item 
+t\+\_\+l\+\_\+aff $\ast$ \mbox{\hyperlink{structjoueur__s_a41490d071aa05b28127b90ff2bcf715b}{textures\+\_\+joueur}}
+\item 
+inventaire\+\_\+t $\ast$ \mbox{\hyperlink{structjoueur__s_a3ef196a06d3fe0a184b553359a10f20c}{inventaire}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Définition de la structure joueur.
+
+\begin{DoxyAuthor}{Auteurs}
+Despert Ange 
+
+Descomps Max
+\end{DoxyAuthor}
+Cette définition est la pour éviter une inclusion mutuelle des fichiers \mbox{\hyperlink{inventaire_8h}{inventaire.\+h}} et \mbox{\hyperlink{personnage_8h}{personnage.\+h}} . 
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{structjoueur__s_a50e33fa65206ee072f527b51edd64ba2}\label{structjoueur__s_a50e33fa65206ee072f527b51edd64ba2}} 
+\index{joueur\_t@{joueur\_t}!attaque@{attaque}}
+\index{attaque@{attaque}!joueur\_t@{joueur\_t}}
+\doxysubsubsection{\texorpdfstring{attaque}{attaque}}
+{\footnotesize\ttfamily int joueur\+\_\+t\+::attaque}
+
+attaque de base du joueur \mbox{\Hypertarget{structjoueur__s_a3a76dc4048c45c64b6ba54747f705102}\label{structjoueur__s_a3a76dc4048c45c64b6ba54747f705102}} 
+\index{joueur\_t@{joueur\_t}!attaque\_actif@{attaque\_actif}}
+\index{attaque\_actif@{attaque\_actif}!joueur\_t@{joueur\_t}}
+\doxysubsubsection{\texorpdfstring{attaque\_actif}{attaque\_actif}}
+{\footnotesize\ttfamily int joueur\+\_\+t\+::attaque\+\_\+actif}
+
+attaque du joueur avec bonus d\textquotesingle{}equipement \mbox{\Hypertarget{structjoueur__s_a7425e58690c8ec4ce5c3ee9a2f82e7a4}\label{structjoueur__s_a7425e58690c8ec4ce5c3ee9a2f82e7a4}} 
+\index{joueur\_t@{joueur\_t}!defense@{defense}}
+\index{defense@{defense}!joueur\_t@{joueur\_t}}
+\doxysubsubsection{\texorpdfstring{defense}{defense}}
+{\footnotesize\ttfamily int joueur\+\_\+t\+::defense}
+
+defense de base du joueur \mbox{\Hypertarget{structjoueur__s_a9ad3c8ba8c284034f3ac32ee8e51fbce}\label{structjoueur__s_a9ad3c8ba8c284034f3ac32ee8e51fbce}} 
+\index{joueur\_t@{joueur\_t}!defense\_actif@{defense\_actif}}
+\index{defense\_actif@{defense\_actif}!joueur\_t@{joueur\_t}}
+\doxysubsubsection{\texorpdfstring{defense\_actif}{defense\_actif}}
+{\footnotesize\ttfamily int joueur\+\_\+t\+::defense\+\_\+actif}
+
+defense du joueur avec bonus d\textquotesingle{}equipement \mbox{\Hypertarget{structjoueur__s_a3ef196a06d3fe0a184b553359a10f20c}\label{structjoueur__s_a3ef196a06d3fe0a184b553359a10f20c}} 
+\index{joueur\_t@{joueur\_t}!inventaire@{inventaire}}
+\index{inventaire@{inventaire}!joueur\_t@{joueur\_t}}
+\doxysubsubsection{\texorpdfstring{inventaire}{inventaire}}
+{\footnotesize\ttfamily inventaire\+\_\+t$\ast$ joueur\+\_\+t\+::inventaire}
+
+Inventaire du joueur \mbox{\Hypertarget{structjoueur__s_a25ede0d11afd576d908541172b5de89f}\label{structjoueur__s_a25ede0d11afd576d908541172b5de89f}} 
+\index{joueur\_t@{joueur\_t}!maxPdv@{maxPdv}}
+\index{maxPdv@{maxPdv}!joueur\_t@{joueur\_t}}
+\doxysubsubsection{\texorpdfstring{maxPdv}{maxPdv}}
+{\footnotesize\ttfamily int joueur\+\_\+t\+::max\+Pdv}
+
+Le nombre de Pv max du joueur \mbox{\Hypertarget{structjoueur__s_a0f7112457a852b4db2c4ace8dc317159}\label{structjoueur__s_a0f7112457a852b4db2c4ace8dc317159}} 
+\index{joueur\_t@{joueur\_t}!niveau@{niveau}}
+\index{niveau@{niveau}!joueur\_t@{joueur\_t}}
+\doxysubsubsection{\texorpdfstring{niveau}{niveau}}
+{\footnotesize\ttfamily short int joueur\+\_\+t\+::niveau}
+
+Le niveau du joueur \mbox{\Hypertarget{structjoueur__s_af3dfbec80c287ad8af431c0d075f2a78}\label{structjoueur__s_af3dfbec80c287ad8af431c0d075f2a78}} 
+\index{joueur\_t@{joueur\_t}!nom\_pers@{nom\_pers}}
+\index{nom\_pers@{nom\_pers}!joueur\_t@{joueur\_t}}
+\doxysubsubsection{\texorpdfstring{nom\_pers}{nom\_pers}}
+{\footnotesize\ttfamily char$\ast$ joueur\+\_\+t\+::nom\+\_\+pers}
+
+Le nom du personnage \mbox{\Hypertarget{structjoueur__s_af8bae63c7135414cd67e14e2720c8828}\label{structjoueur__s_af8bae63c7135414cd67e14e2720c8828}} 
+\index{joueur\_t@{joueur\_t}!pdv@{pdv}}
+\index{pdv@{pdv}!joueur\_t@{joueur\_t}}
+\doxysubsubsection{\texorpdfstring{pdv}{pdv}}
+{\footnotesize\ttfamily int joueur\+\_\+t\+::pdv}
+
+Les points de vie actuels du joueur \mbox{\Hypertarget{structjoueur__s_a596a0e8a7494ccf4d737412e63ed85f4}\label{structjoueur__s_a596a0e8a7494ccf4d737412e63ed85f4}} 
+\index{joueur\_t@{joueur\_t}!statut@{statut}}
+\index{statut@{statut}!joueur\_t@{joueur\_t}}
+\doxysubsubsection{\texorpdfstring{statut}{statut}}
+{\footnotesize\ttfamily statut\+\_\+t$\ast$ joueur\+\_\+t\+::statut}
+
+statut du joueur \mbox{\Hypertarget{structjoueur__s_a41490d071aa05b28127b90ff2bcf715b}\label{structjoueur__s_a41490d071aa05b28127b90ff2bcf715b}} 
+\index{joueur\_t@{joueur\_t}!textures\_joueur@{textures\_joueur}}
+\index{textures\_joueur@{textures\_joueur}!joueur\_t@{joueur\_t}}
+\doxysubsubsection{\texorpdfstring{textures\_joueur}{textures\_joueur}}
+{\footnotesize\ttfamily t\+\_\+l\+\_\+aff$\ast$ joueur\+\_\+t\+::textures\+\_\+joueur}
+
+Tableau contenant toutes les textures du joueur \mbox{\Hypertarget{structjoueur__s_a17da423da1417ecd9d986e3a3ae5aa9f}\label{structjoueur__s_a17da423da1417ecd9d986e3a3ae5aa9f}} 
+\index{joueur\_t@{joueur\_t}!trigger@{trigger}}
+\index{trigger@{trigger}!joueur\_t@{joueur\_t}}
+\doxysubsubsection{\texorpdfstring{trigger}{trigger}}
+{\footnotesize\ttfamily \mbox{\hyperlink{definition__commun_8h_a0c8186d9b9b7880309c27230bbb5e69d}{byte}}$\ast$ joueur\+\_\+t\+::trigger}
+
+Une variable contenant des triggers logiques concernant le personnage \mbox{\Hypertarget{structjoueur__s_a5424e8f0b5f17655064251c71fa4c5cf}\label{structjoueur__s_a5424e8f0b5f17655064251c71fa4c5cf}} 
+\index{joueur\_t@{joueur\_t}!vitesse@{vitesse}}
+\index{vitesse@{vitesse}!joueur\_t@{joueur\_t}}
+\doxysubsubsection{\texorpdfstring{vitesse}{vitesse}}
+{\footnotesize\ttfamily int joueur\+\_\+t\+::vitesse}
+
+vitesse de déplacement de base du joueur \mbox{\Hypertarget{structjoueur__s_a751c17526ebc15d436fe0d7cb08b6a14}\label{structjoueur__s_a751c17526ebc15d436fe0d7cb08b6a14}} 
+\index{joueur\_t@{joueur\_t}!vitesse\_actif@{vitesse\_actif}}
+\index{vitesse\_actif@{vitesse\_actif}!joueur\_t@{joueur\_t}}
+\doxysubsubsection{\texorpdfstring{vitesse\_actif}{vitesse\_actif}}
+{\footnotesize\ttfamily int joueur\+\_\+t\+::vitesse\+\_\+actif}
+
+vitesse du joueur avec bonus d\textquotesingle{}equipement \mbox{\Hypertarget{structjoueur__s_a982ff904b277f68f58f85165c372c3a4}\label{structjoueur__s_a982ff904b277f68f58f85165c372c3a4}} 
+\index{joueur\_t@{joueur\_t}!xp@{xp}}
+\index{xp@{xp}!joueur\_t@{joueur\_t}}
+\doxysubsubsection{\texorpdfstring{xp}{xp}}
+{\footnotesize\ttfamily int joueur\+\_\+t\+::xp}
+
+Le nombre de points d\textquotesingle{}expérience que possède le joueur 
+
+La documentation de cette structure a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{personnage_8h}{personnage.\+h}}\end{DoxyCompactItemize}
