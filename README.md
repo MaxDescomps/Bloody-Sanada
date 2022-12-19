@@ -8,6 +8,9 @@ Descomps Max <br />
 Despert Ange <br />
 Doneau Rafaël <br />
 
+## librairies à télécharger
+sudo apt install libsdl2-dev
+
 ## La documentation
 
 [Par ici](https://themisterpenguin.github.io/Documentation_BLSD)
