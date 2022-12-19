@@ -9,7 +9,7 @@ Despert Ange <br />
 Doneau Rafaël <br />
 
 ## librairies à télécharger
-sudo apt install libsdl2-dev
+sudo apt-get install libsdl2-dev
 
 ## La documentation
 
